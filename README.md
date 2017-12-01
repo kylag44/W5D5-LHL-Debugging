@@ -133,8 +133,12 @@ Helpful Xcode Pro Settings
 ### Folding Ribbon
 
 * Ribbon folding was removed from Xcode 9.
+
 ![page7image3808](resources/7AEF7C43C31E59873B1673F9C51E2B51.png)
+
 * Xcode 9 supports a version of the Ribbon Folding by holding down ⌘ + bring the mouse pointer over the first word in a function or class.
+
+
 ![](resources/ribbon.png)
 
 * Great for solving scope issues.
