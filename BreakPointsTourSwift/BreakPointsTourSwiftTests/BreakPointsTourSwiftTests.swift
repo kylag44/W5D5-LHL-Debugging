@@ -75,8 +75,19 @@ class BreakPointsTourSwiftTests: XCTestCase {
       print(i)
     }
   }
-  
+  // **********************************
   // Show SYMBOLS breakpoint in navigator
+  // **********************************
+  // Add User Breakpoints
+  // ====================
+  // * All Objective-C Exceptions (po $arg1)
+  // * -[UIApplication main] (expr @import UIKit)
+  // * UIViewAlertForUnsatisfiableConstraints
+  // * -[UIView(UIConstraintBasedLayout) _viewHierarchyUnpreparedForConstraint:]
+  // * UICollectionViewFlowLayoutBreakForInvalidSizes
+  
+  // https://medium.com/rocket-fuel/ios-breakpoint-secret-sauce-for-better-debugging-c0009f116ca1
+  
   
   // Show ALL EXCEPTIONS breakpoint by tapping Go button in ViewController
   
