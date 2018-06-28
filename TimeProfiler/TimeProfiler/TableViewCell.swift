@@ -9,12 +9,14 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    var data:Data? {
-        didSet {
-            label.text = data?.string
-            imgView.image = data?.img
-        }
+  
+  var data:Data? {
+    didSet {
+      label.text = data?.string
+      imgView.image = data?.img
     }
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var imgView: UIImageView!
+  }
+  
+  @IBOutlet weak var label: UILabel!
+  @IBOutlet weak var imgView: UIImageView!
 }
