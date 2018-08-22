@@ -18,38 +18,25 @@ class DetailViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.setupRandomColors()
+    self.setupView()
   }
   
-  func setupRandomColors() {
+  func setupView() {
     self.masterButton.setTitleColor(UIColor.randomColor(), for: UIControlState())
     self.view.backgroundColor = UIColor.randomColor()
   }
   
+  // closure retains self and self retains this closure
+  
   @IBAction func buttonTapped() {
     closure = {
-      print("Some fake stuff")
+      print(#line, "Some fake stuff")
       self.fakeFunk()
     }
     closure?()
   }
   
-//      @IBAction func buttonTapped() {
-//          closure = { [weak self] in
-//              print("Some fake stuff")
-//              guard let weakSelf = self else {
-//                  return
-//              }
-//              weakSelf.fakeFunk()
-//          }
-//          closure?()
-//      }
-  
-  
-  
   func fakeFunk() {
     print("fake funk")
   }
-  
-  
 }
