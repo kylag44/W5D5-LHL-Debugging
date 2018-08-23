@@ -206,35 +206,84 @@ assert(num == 11,
 
 ---
 
-## [fit] Debugging Strategies
+## Debugging Strategies
 
-* Avoid stabbing in the dark. THINK before changing anything.
-* My Technique:
-  * Describe problem thoroughly. 
-  * Try to describe the precise conditions that trigger **unexpected** behaviour. 
-  * If you need more info, gather it. THINK, don’t just start stabbing into the dark (i.e. commenting out lines **superstitiously**).
-  * Form a hypothesis. 
-  * Start with most obvious and easy to test.
+ **🎗Avoid stabbing in the dark 🔪. THINK 🤔 before acting.**
+
+**Prepare**
+
+  - mentally ("I can do this!").
+  - consider running *clean*, delete derived data (~/Library/Developer/Xcode/DerivedData), REBOOT!
+  
+**Damage Control**
+
+- mitigate against anything that might go wrong. (Backup!)
+
+**Describe problem thoroughly**
+
+- describe the *precise* conditions that trigger *unexpected* behaviour. 
+- if you need more info, gather it.
+
   
 ---
   
-## [fit] More...
-  
-  * Test your hypothesis.
-  * If that isn’t it, go to the next most obvious cause.
-  * Repeat until you find the problem and solve it.
-  * Document your results in a Solutions Log (Agile Best Practice).
-  * Always take any compiler errors seriously. Decrypt them first.
-  * Get in the habit of solving problems yourself before looking them up on SO.
+## More Debugging Strategies...
+
+**Reproduce the problem**
+
+- be able to reproduce the problem at will
+- intermittent problems will make this difficult/impossible
+
+**Form a causal hypothesis**
+
+- start with obvious and easy to test hypotheses
+- THINK, don’t just start stabbing in the dark (e.g. commenting out lines **superstitiously**)
+- aim to find root cause
   
 ---
 
-## [fit] More...
-  
-  * Consider that a problem might have more than a single cause. 
-  * Avoid complex problems by a practice of continuous testing. Better yet use TDD.
-  * When building always try to get your code to a testable state, test and then move to building the next element.
-  * Learn to write unit tests.
+## More Debugging Strategies...
+
+**Fix it!**
+
+- understand the fix before you make it
+- make sure you are solving the root cause
+
+**Test**
+
+- make sure you really have solved the issue
+- make sure you haven't acidentally introduced new problems
+
+---
+
+## More Debugging Strategies...
+
+**Reflect/Document**
+
+- keep a Solutions Log (document it)
+- reflect on your solution
+
+**Prevent future occurrences**
+
+- learn your lesson
+
+---
+
+## 🎗Debugging Tips
+
+- Blame yourself!! ("user error" 🤔)
+- Always take any compiler errors seriously. Decrypt them first. Search SO if the error makes no sense
+- Solve problems yourself before looking them up on SO
+- Consider that a problem might have more than a single cause. 
+
+---
+
+## More🎗Debugging Tips
+
+-  Avoid complex problems by a practice of continuous testing. Better yet use TDD.
+- When building always try to get your code to a testable state, test and then move to building the next component.
+- Learn to write unit tests.
+- If you're stuck try [Rubber Duck Debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
   
 ---
 
@@ -277,3 +326,4 @@ assert(num == 11,
 * [Instruments User Guide](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/index.html)
 * [LLVM](http://lldb.llvm.org)
 * [Using Breakpoints](http://jeffreysambells.com/2014/01/14/using-breakpoints-in-xcode)
+* [The Universal Troubleshooting Process](https://www.bignerdranch.com/blog/the-universal-troubleshooting-process/)
